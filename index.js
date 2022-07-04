@@ -51,3 +51,12 @@ function countOccurrences(list, value) {
 
     // return list.reduce((acc, c) => c === value ? ++acc : acc)
 }
+
+// Exercise 7
+
+function firstToEnd(list) {
+
+    return [...list, list[0]].slice(1)
+}
+
+console.log(firstToEnd(['one', 'two', 'three']))
