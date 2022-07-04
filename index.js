@@ -37,3 +37,19 @@ function getIndex(list, value) {
 
     return undefined
 }
+
+// Exercise 6
+
+function countOccurrences(list, value) {
+    
+    return list.reduce((accumulator, currentValue) => {
+
+        if(currentValue === value) return ++accumulator
+        
+        return accumulator
+    }, 0)
+
+    // return list.reduce((acc, c) => c === value ? ++acc : acc)
+}
+
+console.log(countOccurrences([0, 0, 1, 1, 0, 1, 1, 0, 2, 8, 2, 1], 0))
