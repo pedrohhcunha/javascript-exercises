@@ -26,3 +26,14 @@ function reverseArray(list) {
 
     return list.reverse()
 }
+
+// Exercise 5
+
+function getIndex(list, value) {
+    
+    const index = list.indexOf(value)
+
+    if(index !== -1) return index
+
+    return undefined
+}
