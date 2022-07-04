@@ -59,4 +59,21 @@ function firstToEnd(list) {
     return [...list, list[0]].slice(1)
 }
 
-console.log(firstToEnd(['one', 'two', 'three']))
+// Exercise 8
+
+function sumOfBiggestPair(list) {
+    
+    const sumOfPairs = new Array()
+
+    list.forEach((item, index) => {
+        if(index % 2 == 0){
+            sumOfPairs.push(item)
+        } else {
+            sumOfPairs[sumOfPairs.length - 1] = sumOfPairs[sumOfPairs.length - 1] + item
+        }
+    });
+    
+    return Math.max(...sumOfPairs)
+}
+
+console.log(sumOfBiggestPair([0, 2, 7]))
