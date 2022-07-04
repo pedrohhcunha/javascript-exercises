@@ -4,4 +4,11 @@ function isArray(value) {
     return Array.isArray(value)
 }
 
-console.log(isArray(['teste', 1, 3]))
+
+// Exercise 2
+
+function getEnds(list) {
+
+    return [ list[0], list[list.length - 1] ]
+}
+
