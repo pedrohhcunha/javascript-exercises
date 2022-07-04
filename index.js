@@ -1,7 +1,7 @@
 // Exercise 1
 
 function isArray(value) {
-    
+
     return Array.isArray(value)
 }
 
@@ -18,4 +18,11 @@ function getEnds(list) {
 function getElement(list, index) {
     
     return list[index]
+}
+
+// Exercise 4
+
+function reverseArray(list) {
+
+    return list.reverse()
 }
