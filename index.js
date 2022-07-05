@@ -87,3 +87,14 @@ function concatObjectList(list1, list2) {
         }
     })
 }
+
+function removeDuplicates(list) {
+    
+    let newList = new Array()
+
+    list.forEach(item => {
+        if(!newList.includes(item)) newList.push(item)
+    })
+
+    return newList
+}
