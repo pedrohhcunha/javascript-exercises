@@ -88,6 +88,8 @@ function concatObjectList(list1, list2) {
     })
 }
 
+// Execise 10
+
 function removeDuplicates(list) {
     
     let newList = new Array()
