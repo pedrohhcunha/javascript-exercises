@@ -76,4 +76,14 @@ function sumOfBiggestPair(list) {
     return Math.max(...sumOfPairs)
 }
 
-console.log(sumOfBiggestPair([0, 2, 7]))
+// Execise 9
+
+function concatObjectList(list1, list2) {
+
+    return list1.map(item => {
+        return {
+            ...item,
+            ...list2.find(item2 => item.id === item2.id)
+        }
+    })
+}
