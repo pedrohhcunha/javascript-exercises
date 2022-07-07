@@ -100,3 +100,27 @@ function removeDuplicates(list) {
 
     return newList
 }
+
+// Esercise 12
+
+function biggestListSum(listOfLists) {
+
+    let listsSum = listOfLists.map((list, index) => {
+        let sum = list.reduce((accumulator, item) => {
+            return accumulator + item
+        })
+
+        return {
+            orginalIndex: index,
+            sum
+        }
+    })
+
+    let listSumOrdered = listsSum.sort((listSumA, listSumB) => {
+        return listSumA.sum - listSumB.sum
+    }).reverse()
+
+    return listSumOrdered[0].orginalIndex
+
+    // return listOfLists.map((list, index) => [index, list.reduce((acc, item) => acc + item)]).sort((a, b) => a[1] - b[1]).reverse()[0][0]
+}
