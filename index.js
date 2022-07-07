@@ -101,7 +101,7 @@ function removeDuplicates(list) {
     return newList
 }
 
-// Esercise 12
+// Esercise 11
 
 function biggestListSum(listOfLists) {
 
@@ -123,4 +123,10 @@ function biggestListSum(listOfLists) {
     return listSumOrdered[0].orginalIndex
 
     // return listOfLists.map((list, index) => [index, list.reduce((acc, item) => acc + item)]).sort((a, b) => a[1] - b[1]).reverse()[0][0]
+}
+
+// Exercise 12
+
+function getBiggestObjectId(listOfObjects) {
+    return listOfObjects.sort((a, b) => a.id >= b.id ? -1 : 1)[0]
 }
